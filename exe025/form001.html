@@ -17,9 +17,19 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="">
-        <p>Nome: <input type="text" name="primeiroNome" id="primeiroNome"></p>
-        <p>Sobrenome: <input type="text" name="segundoNome" id="segundoNome"></p>
+    <!--
+        USAR LABEL PARA AJUDAR NAS PESQUISAS GOOGLE
+        USA "I" NA FRENTE PARA ID'S
+        FOR => ID
+
+    -->
+    <form action="cadastro.php">
+        <p><label for="iprimeiroNome">Nome:</label> 
+            <input type="text" name="primeiroNome" id="iprimeiroNome" autocomplete="off">
+        </p>
+        <p><label for="isegundoNome">Sobrenome: </label>
+            <input type="text" name="segundoNome" id="isegundoNome" autocomplete="off">
+        </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
