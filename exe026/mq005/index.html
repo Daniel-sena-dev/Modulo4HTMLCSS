@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midia-query.css">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, quidem? Qui culpa saepe excepturi animi fugit asperiores, aperiam reiciendis! Eum quasi, recusandae quod sint tempora alias aut velit aliquam reprehenderit veritatis tempore laborum hic corporis doloremque voluptatem id perferendis labore!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet exercitationem sint neque, nihil modi necessitatibus rerum. A commodi mollitia ex error expedita deserunt temporibus odit quo, blanditiis modi. Aperiam, molestias?</p>    
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolorum alias eos recusandae explicabo unde nobis quisquam ea necessitatibus ut facilis delectus sint quasi deserunt, consequuntur repudiandae reiciendis voluptatum enim itaque dolore impedit! Aspernatur deleniti dicta maiores, id error repudiandae!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, molestias asperiores amet nemo quod facilis voluptatibus reprehenderit obcaecati possimus fugit mollitia natus. Provident facilis expedita consequatur tenetur fugiat illo quas hic quos. Accusantium sunt tenetur facere laborum unde eum quam at nisi molestias, natus saepe exercitationem numquam quidem eaque id?</p>
+        
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block';
+            } else{
+                itens.style.display = 'none';
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none';
+            } else{
+                itens.style.display = 'block';
+            }
+
+
+
+        }
+    </script>
+</body>
+</html>
